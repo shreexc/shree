@@ -16,7 +16,7 @@ h1{
     background-color: white;
     letter-spacing: 3px;
     text-align: center;
-    font-size: 150px;
+    max-width: 600px;
     word-spacing: 6px;
     font-family: "Ramaraja", serif;
 }
