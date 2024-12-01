@@ -16,14 +16,14 @@ h1{
     background-color: white;
     letter-spacing: 3px;
     text-align: center;
-    max-width: 600px;
+    max-width: 700px;
     word-spacing: 6px;
     font-family: "Ramaraja", serif;
 }
 
 h2{    text-align: right;
-    font-size: 50px;
-    font-family: "Public Sans", sans-serif;
+       max-width: 550px;
+   font-family: "Public Sans", sans-serif;
 
 
 }
@@ -40,6 +40,6 @@ text-align: left;
 }
 
 h3{
-    font-size: 25px;
+    max-width: 500px;
     font-family: "Libre Baskerville", serif;
 }
