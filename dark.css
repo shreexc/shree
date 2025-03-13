@@ -44,4 +44,10 @@ h3{
     font-family: "Libre Baskerville", serif;
 }
 
+.logo img{
+    height: 300px;
+    width: 350px;
+    border-radius: 40%;
+}
+
 
