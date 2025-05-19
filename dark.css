@@ -47,7 +47,7 @@ h3{
     font-size: 25px;
     font-family: "Libre Baskerville", serif;
 }
-.button {
+.click-button {
   background: linear-gradient(135deg, #1a1a1a, #333);
   border: 2px solid #444;
   color: #b3b3b3;
