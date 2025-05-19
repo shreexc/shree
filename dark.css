@@ -54,11 +54,12 @@ h3{
   }
 }
 .button {
+    size:58px;
   background: linear-gradient(135deg, #1a1a1a, #333);
   border: 2px solid #444;
   color: #b3b3b3;
   padding: 12px 24px;
-  size:58px;
+    
   font-size: 55px;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
