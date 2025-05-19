@@ -11,7 +11,6 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
 h1{
     background-color: rgb(103, 103, 103);
     letter-spacing: 3px;
@@ -20,39 +19,47 @@ h1{
     word-spacing: 6px;
     font-family: "Ramaraja", serif;
 }
-
 h2{  
     color: antiquewhite;
     text-align: center;
     font-size: 40px;
     font-family: "Ga Maamli", sans-serif;
 }
-
 h4{
     color: rgb(127, 184, 184);
     font-family: Arial, Helvetica, sans-serif;
 font-size: 45px;
 text-align: center;
 }
-
 h5{
     color: grey;
     font-size: 99px;
 text-align: right;
 }
-
 h3{
     color: rgb(126, 254, 156);
     text-align: center;
     font-size: 25px;
     font-family: "Libre Baskerville", serif;
 }
-.click-button {
+@keyframes auraGlow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+}
+.button {
   background: linear-gradient(135deg, #1a1a1a, #333);
   border: 2px solid #444;
   color: #b3b3b3;
   padding: 12px 24px;
-  font-size: 16px;
+  
+  font-size: 25px;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -60,6 +67,7 @@ h3{
   position: relative;
   overflow: hidden;
   transition: 0.4s ease-in-out;
+  animation: auraGlow 3s infinite alternate ease-in-out;
 }
 .button::before {
   content: '';
@@ -78,10 +86,9 @@ h3{
 .button:hover {
   background: #222;
   color: #ffffff;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
 }
-
-
-
-
-
+.button:active {
+  transform: scale(0.95);
+}
