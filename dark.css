@@ -47,14 +47,41 @@ h3{
     font-size: 25px;
     font-family: "Libre Baskerville", serif;
 }
-
-.click-button{
-    font-size: 70px;
-    background-size: 90px;
-    color: ivory;
-    background-color: rgb(173, 0, 0);
-    border-radius: 7px;
+.button {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  border: 2px solid #444;
+  color: #b3b3b3;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
 }
+.button::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+  transition: 0.5s;
+}
+.button:hover::before {
+  top: 0;
+  left: 0;
+}
+.button:hover {
+  background: #222;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+
 
 
 
