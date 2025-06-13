@@ -23,11 +23,10 @@ h5{
 text-align: right;
 }
 h3{
-    color: rgb(126, 254, 156);
     text-align: center;
     font-size: 47px;
     font-family: "Libre Baskerville", serif;
-    text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;
+animation: pulseGlow 2s infinite alternate;
 }
 
 .button {
@@ -73,4 +72,10 @@ button:hover {
 button:active {
     transform: scale(0.95);
     box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+}
+
+@keyframes pulseGlow {
+  0% { text-shadow: 0 0 10px #ffffff; }
+  50% { text-shadow: 0 0 30px #ffffff; }
+  100% { text-shadow: 0 0 10px #ffffff; }
 }
