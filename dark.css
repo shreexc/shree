@@ -41,7 +41,7 @@ animation: pulseGlow 2s infinite alternate;
     font-size: 70px;
     font-weight: 600;
     color: #fff;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     cursor: pointer;
     transition: all 0.6s ease;
     position: relative;
@@ -154,4 +154,5 @@ button:active {
   50% { text-shadow: 0 0 30px #ffffff; }
   100% { text-shadow: 0 0 10px #ffffff; }
 }
+
 
