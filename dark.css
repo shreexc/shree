@@ -38,7 +38,7 @@ animation: pulseGlow 2s infinite alternate;
     background: linear-gradient(135deg, #222, #000);
     border: 2px solid #d4af37;
     padding: 16px 36px;
-    font-size: 65px;
+    font-size: 60px;
     font-weight: 600;
     color: #fff;
     letter-spacing: 3px;
@@ -154,6 +154,7 @@ button:active {
   50% { text-shadow: 0 0 30px #ffffff; }
   100% { text-shadow: 0 0 10px #ffffff; }
 }
+
 
 
 
