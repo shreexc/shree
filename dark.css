@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-body{
-background: linear-gradient(to right, black, rgb(41, 41, 41));
-}
 
 h1{
     background-color: rgb(103, 103, 103);
@@ -153,6 +150,7 @@ button:active {
   50% { text-shadow: 0 0 30px #ffffff; }
   100% { text-shadow: 0 0 10px #ffffff; }
 }
+
 
 
 
