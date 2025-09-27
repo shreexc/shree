@@ -13,7 +13,6 @@ a{
 }
 
 h1{
-    background-color: rgb(103, 103, 103);
     letter-spacing: 3px;
     text-align: center;
     font-size: 150px;
@@ -160,6 +159,7 @@ button:active {
   50% { text-shadow: 0 0 30px #ffffff; }
   100% { text-shadow: 0 0 10px #ffffff; }
 }
+
 
 
 
