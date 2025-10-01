@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 body{
-background: linear-gradient(to bottom right,  rgb(255, 255, 255), rgb(93, 93, 93), rgb(30, 30, 30), rgb(0, 0, 0));    
+background: linear-gradient(to top, black, black, grey, white);    
 }
 
 a{ 
@@ -176,4 +176,5 @@ button:active {
     text-shadow: 0 0 10px red, 0 0 20px orange, 0 0 30px yellow;
   }
 }
+
 
