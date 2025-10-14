@@ -1,1 +1,156 @@
-.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: system-ui, -apple-system, sans-serif; background: #000; color: #f1f5f9; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+        header { position: sticky; top: 0; background: rgba(0,0,0,0.95); backdrop-filter: blur(10px); padding: 1rem 0; z-index: 100; border-bottom: 1px solid #1f2937; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 800; background: linear-gradient(45deg, #06b6d4, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: #94a3b8; text-decoration: none; transition: color 0.3s; }
+        .nav-links a:hover { color: #06b6d4; }
+        section { padding: 5rem 0; border-bottom: 1px solid #1f2937; }
+        h2 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 0.5rem; background: linear-gradient(45deg, #06b6d4, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center; }
+        .subtitle { text-align: center; color: #94a3b8; margin-bottom: 3rem; display: inline; }
+        .section-header { text-align: center; margin-bottom: 3rem; }
+        #home { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .hero-title { font-size: clamp(2.5rem, 8vw, 6rem); font-weight: 900; margin: 1rem 0; }
+        .hero-subtitle { color: #06b6d4; font-size: 1.25rem; letter-spacing: 0.1em; text-transform: uppercase; }
+        .hero-desc { font-size: 1.125rem; color: #94a3b8; max-width: 600px; margin: 1.5rem auto; }
+        .about-grid { display: grid; gap: 2rem; align-items: center; justify-content: center;}
+        .bio p { margin-bottom: 1rem; color: #cbd5e1; align-items: center; justify-content: center;}
+        .details { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.5rem; color: #94a3b8; }
+        .projects-grid { display: grid; gap: 2rem; }
+        .project-card { background: #151515; padding: 2rem; border-radius: 1rem; transition: all 0.3s; }
+        .project-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(6, 182, 212, 0.2); }
+        .project-card h3 { color: #f1f5f9; font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .project-card p { color: #94a3b8; margin-bottom: 1rem; }
+        .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+        .tag { background: #374151; color: #94a3b8; padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.875rem; }
+        .skills-grid { display: grid; gap: 1rem; max-width: 800px; margin: 0 auto; }
+        .skill { background: #151515; padding: 1.5rem; border-radius: 0.75rem; text-align: center; transition: all 0.3s; }
+        .skill:hover { background: #374151; transform: scale(1.05); }
+        .contact-form { max-width: 600px; margin: 0 auto; background: #151515; padding: 2rem; border-radius: 1rem; }
+        .form-group { margin-bottom: 1.5rem; }
+        a{color: white;}
+        label { display: block; margin-bottom: 0.5rem; color: #94a3b8; }
+        input, textarea { width: 100%; padding: 0.75rem; background: rgba(0,0,0,0.5); border: 1px solid #1f2937; border-radius: 0.5rem; color: #f1f5f9; font-family: inherit; }
+        input:focus, textarea:focus { outline: none; border-color: #06b6d4; }
+        textarea { resize: vertical; min-height: 120px; }
+        button { width: 100%; padding: 1rem; background: #06b6d4; color: #000; font-weight: 600; border: none; border-radius: 0.5rem; cursor: pointer; transition: all 0.3s; }
+        button:hover { background: #38bdf8; }
+        .social-links { display: flex; justify-content: center; gap: 1.5rem; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #1f2937; }
+        .social-links a { color: #94a3b8; font-size: 1.5rem; transition: color 0.3s; }
+        .social-links a:hover { color: #06b6d4; }
+        footer { text-align: center; padding: 2rem 0; color: #64748b; background: #151515; }
+        @media (min-width: 768px) { .about-grid { grid-template-columns: 1fr 2fr; } .projects-grid { grid-template-columns: repeat(2, 1fr); } .skills-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (min-width: 1024px) { .projects-grid { grid-template-columns: repeat(3, 1fr); } .skills-grid { grid-template-columns: repeat(4, 1fr); } }
+        @media (max-width: 768px) { .nav-links { display: none; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo"><a href="https://shreejalshah.com.np/work">work/Shree</a></div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="home">
+            <div>
+                <h1 class="hero-title">I <span style="background: linear-gradient(45deg, #06b6d4, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">build </span>here.</h1>
+                <p class="hero-subtitle">Projects & Portfolio</p>
+                <p class="hero-desc">Developer, Learner, Enthusiast, & World Builder.</p>
+                <a href="#projects" class="cta-btn"><b>My few Projects</b></a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-header">
+                <h2>Who am I?</h2> <span class="subtitle">In one word, I'm a World Builder.</span>
+            </div>
+            <div class="about-grid">
+                <div class="bio">
+<p>I'm Shreejal Shah. I code, develop, build, and deploy things. Some are awesome, some are just mediocre, but the most important thing is that I learn from each of them to make something better & meaningful next time. My enthusiasm & drive for constant learning never fade away (hopefully, never will). This constant drive pushes me each day for more. Talking more, other than coding, I occasionally write, paint, and tweet. 
+    <br>Let's be honest, if you're a recruiter, you might be thinking, "Why doesn't this guy have LinkedIn?" Well, to be honest, being a full-stack dev, my eyes can't bear the UI. Meanwhile, everyone on LinkedIn is busy being perfect & fake. I wanna be raw & real, I want to be imperfect so I can keep my constant learner pace. That's why I chose to ditch the LinkedIn portion & build my own portfolio page instead.</p>
+<p>Ahh, ig enough abt me. See my projects & works now :)</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="section-header">
+                <h2>Recent Projects</h2> <span class="subtitle">A collection of my most recent works.<br> For all the projects, checkout my GitHub.</span>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>💖 <a href="https://shreexc.github.io/love">Love Devs</a></h3>
+                    <p>A website made by love for lovers. Includes a Love Calculators to find your love & love novels to read with your partner. 💗</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>📚 <a href="https://shreexc.github.io/know">Know Course</a></h3>
+                    <p>A website where you can find the course you vibe on. Share it to your friends & know theirs too.</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>🤖 <a href="">SLM</a></h3>
+                    <p>In this era where everything is AI, I thought to put my contriubution into it too. I'm currently learning & working on it. Will deploy it soon. Stay tuned. :)</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="section-header">
+                <h2>My Skill Set</h2> <span class="subtitle">Languages I know other than my mother tongue.</span>
+            </div>
+            <div class="skills-grid">
+                <div class="skill">🩻 HTML</div>
+                <div class="skill">🎨 CSS</div>
+                <div class="skill">👾 JS</div>
+                <div class="skill">🌐 WevDev</div>
+                <div class="skill">🐍 Python</div>
+                <div class="skill">🗄️ SQL</div>
+                <div class="skill">☁️ Adobe</div>
+                <div class="skill">🖱️ Figma</div>
+            </div>
+        </section>
+
+<section id="contact"><div class="section-header">
+                <h2>Get In Touch</h2> <span class="subtitle">Have something? Let's build the world together. Get all my contacts <i><a href="https://shreejalshah.com.np">here</a></i></span>
+</div></section></main>
+
+    <footer><p>®2025 Shreejal Shah</p></footer>
+    <script>
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+link.addEventListener('click', e => {
+e.preventDefault();
+document.querySelector(link.getAttribute('href')).scrollIntoView({behavior: 'smooth'});});});</script></body></html>
