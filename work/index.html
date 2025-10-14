@@ -153,4 +153,19 @@
 document.querySelectorAll('a[href^="#"]').forEach(link => {
 link.addEventListener('click', e => {
 e.preventDefault();
-document.querySelector(link.getAttribute('href')).scrollIntoView({behavior: 'smooth'});});});</script></body></html>
+document.querySelector(link.getAttribute('href')).scrollIntoView({behavior: 'smooth'});});});
+        
+    document.onkeydown = e => {
+  if (e.key === "F12") {
+    alert("Nice try diddy");
+    return false;
+  }
+  if (e.ctrlKey && e.key.toLowerCase() === "u") {
+    alert("Nice try diddy");
+    return false;
+  }
+ if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") {
+    alert("Nice try diddy");
+    return false;
+  }
+};</script></body></html>
