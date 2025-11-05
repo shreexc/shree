@@ -13,6 +13,9 @@
 75% {text-shadow: 0 0 10px gold, 0 0 20px lime, 0 0 30px turquoise;}
 100%{text-shadow: 0 0 10px red, 0 0 20px orange, 0 0 30px yellow;}}
 
+body{
+  background-color: rgb(20, 20, 20);
+}
 a{ 
 text-align: center;
 text-decoration: none;
@@ -64,6 +67,7 @@ animation: pulseGlow 2s infinite alternate;
 .box {position: relative; z-index: 1; padding: 1rem 2.5rem; font-size: 50px; font-weight: 600; border-radius: 9999px; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.1); color: #ffffff;}
 .box:hover {transform: scale(1.05); background: rgba(255, 100, 0, 0.1); border-color: rgba(255, 255, 255, 0.5); box-shadow: 0 0 5px #ffee00, 0 0 25px #ff9900, 0 0 50px #ff4500, inset 0 0 50px #ffcc00;}
 .box:active {transform: scale(1.02); background: rgba(255, 120, 0, 0.15); box-shadow: 0 0 8px #ffee00, 0 0 40px #ff9900, 0 0 70px #ff4500, inset 0 0 65px #ff9900;}
+
 
 
 
