@@ -1,76 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 
-@keyframes pulseGlow {
-0% { text-shadow: 0 0 10px #ffffff; }
-50% { text-shadow: 0 0 30px #ffffff; }
-100% { text-shadow: 0 0 10px #ffffff; }}
-@keyframes rain{
-0% {text-shadow: 0 0 10px red, 0 0 20px orange, 0 0 30px yellow;}
-25% {text-shadow: 0 0 10px green, 0 0 20px cyan, 0 0 30px blue;}
-50% {text-shadow: 0 0 10px indigo, 0 0 20px violet, 0 0 30px pink;}
-75% {text-shadow: 0 0 10px gold, 0 0 20px lime, 0 0 30px turquoise;}
-100%{text-shadow: 0 0 10px red, 0 0 20px orange, 0 0 30px yellow;}}
+*{
+    color: black;
+    margin: 0px;
+    padding:2px;
+    text-decoration: none;
+    font-family: 'SF Pro Display', sans-serif;
+}
+body{background: url(https://images.pexels.com/photos/1242348/pexels-photo-1242348.jpeg); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;}
 
-body{
-  background-color: black;
-  text-align: center;
-  margin: 20vh;
+header{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
 }
 
-a{ 
-text-align: center;
-text-decoration: none;
-color: white;
-}
-h1{
-text-decoration: wavy;
-color: rgb(0, 0, 0);
-letter-spacing: 3px;
-text-align: center;
-font-size: 150px;
-word-spacing: 6px;
-font-family: "Ramaraja", serif;
-animation: pulseGlow 7s infinite;}
-h2{  
-animation: rain 10s linear infinite;
-color: black;
-text-align: center;
-font-size: 50px;
-font-family: Tahoma;
-}
-h5{
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-color: rgb(50, 50, 50);
-font-size: 60px;
-text-align: center;
-}
-h3{
-text-align: center;
-font-size: 40px;
-font-family: "Libre Baskerville", serif;
-animation: pulseGlow 2s infinite alternate;
-}
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; padding: 16px 36px; font-size: 57px; font-weight: 600; letter-spacing: 2px; cursor: pointer; position: relative; overflow: hidden; border-radius: 15px; background: #000000; border: 1px solid #ffffff; color: #ffffff; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); transition: all 0.6s ease;
-}
-.button::before {
-position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.5em; color: rgba(255, 255, 255, 0.8); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;
-}
-.button:hover, .button:active {
-  background: #410000; border-color: #430000; box-shadow: 0 6px 20px rgba(102, 0, 0, 0.8); transform: scale(1.02);
-}
-.button:active {
-  background: #4d0000; border-color: #660000; box-shadow: 0 2px 10px rgba(77, 0, 0, 0.6); transform: scale(0.98);
-}
-.button:hover::before, .button:active::before {
-  opacity: 1;
-}
-.box {position: relative; z-index: 1; padding: 1rem 2.5rem; font-size: 50px; font-weight: 600; border-radius: 9999px; cursor: pointer; transition: all 0.4s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.1); color: #ffffff;}
-.box:hover {transform: scale(1.05); background: rgba(255, 100, 0, 0.1); border-color: rgba(255, 255, 255, 0.5); box-shadow: 0 0 5px #ffee00, 0 0 25px #ff9900, 0 0 50px #ff4500, inset 0 0 50px #ffcc00;}
-.box:active {transform: scale(1.02); background: rgba(255, 120, 0, 0.15); box-shadow: 0 0 8px #ffee00, 0 0 40px #ff9900, 0 0 70px #ff4500, inset 0 0 65px #ff9900;}
+.header{display: flex; gap: 10vh; color: white;}
+.footer{background-color: white; margin-bottom: 0vh; opacity: 70%; border-radius: 20px;}
+.brand{display: flex; list-style: none; gap: 5vh; margin-top: 4vh; font-size: 25px; margin-left: 17vh; margin-bottom: 5vh;}
+h4{color: white;} h3{font-size: 25px; margin-left: 2vh;}
+h1{font-family: 'Playfair Display', serif; font-weight: bolder;}
+.box{background-color: black; display: flex; flex-direction: column; padding: 20vh 1vh; opacity: 0%;}
 
+@media (max-width: 480px) {
+.header{display: flex; gap: 1vh;}
+h4{font-weight: lighter;}
+
+.brand{
+    margin: 0vh;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+}
