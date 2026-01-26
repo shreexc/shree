@@ -20,14 +20,14 @@ header{
 .brand{display: flex; list-style: none; gap: 5vh; margin-top: 4vh; font-size: 25px; margin-left: 17vh; margin-bottom: 5vh;}
 h4{color: white;} h3{font-size: 25px; margin-left: 2vh;}
 h1{font-family: 'Playfair Display', serif; font-weight: bolder;}
-.t1, .t2{font-family: 'Playfair Display', serif;}
+.t1, .t2{font-family: 'Playfair Display', serif; text-align: center;}
 .t2{color: white;}
 .box{display: flex; flex-direction: column; padding: 20vh 1vh;}
 
 @media (max-width: 480px) {
 .header{display: flex; gap: 1vh;}
 h4{font-weight: lighter;}
-.t1, t2.{font-size: 15px;}
+.t1, t2.{font-size: 15px; text-align: left;}
 
 .brand{
     margin: 0vh;
@@ -35,4 +35,5 @@ h4{font-weight: lighter;}
     margin-bottom: 3vh;
 }
 }
+
 
