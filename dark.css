@@ -26,7 +26,7 @@ h1{font-family: 'Playfair Display', serif; font-weight: bolder;}
 @media (max-width: 480px) {
 .header{display: flex; gap: 1vh;}
 h4{font-weight: lighter;}
-.t1, .t2{text-align: left; font-size: 15px;}
+.t1, .t2{text-align: left; font-size: 10px;}
 
 .brand{
     margin: 0vh;
@@ -34,3 +34,4 @@ h4{font-weight: lighter;}
     margin-bottom: 3vh;
 }
 }
+
