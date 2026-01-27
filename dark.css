@@ -31,9 +31,11 @@ h4{font-weight: lighter;}
 .brand{
     margin: 0vh;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    gap: 1px;
 }
 }
+
 
 
 
