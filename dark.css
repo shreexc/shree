@@ -30,11 +30,14 @@ h4{font-weight: lighter;}
 
 .brand{
     margin: 0vh;
-    justify-content: center;
+    margin-top: 2vh;
+    justify-self: center;
     align-items: left;
-    gap: 1px;
+    gap: 0vh;
 }
+p{margin-top: 5vh;}
 }
+
 
 
 
