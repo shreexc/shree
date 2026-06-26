@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "title": "This website",
+    "date": "2026-06-18",
+    "description": "A static personal site with a built-in admin panel that publishes blog posts, projects, and now-updates directly to GitHub — no backend, no build step.",
+    "tech": ["html", "css", "javascript", "github api"],
+    "status": "live",
+    "link": "https://shreejalshah.com.np",
+    "repo": "https://github.com/shreexc",
+    "image": ""
+  }
+]

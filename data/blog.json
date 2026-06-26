@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "title": "Hello, world",
+    "slug": "hello-world",
+    "date": "2026-06-18",
+    "tags": ["meta", "first"],
+    "excerpt": "Why I built this site, and what I'll be writing about here.",
+    "body": "# Hello, world\n\nThis is the first post on my new site.\n\nI built this whole thing to be **dynamic** — every post here was published straight from the [admin panel](/admin/) with a single click. No editing HTML, no redeploys by hand.\n\n## What to expect\n\n- notes on things I'm learning\n- write-ups of side projects\n- the occasional half-baked idea\n\nThanks for reading :)"
+  }
+]

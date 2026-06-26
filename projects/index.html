@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  <title>Projects ― Shreejal Shah</title>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="../">Shreejal Shah</a>
+      <div class="nav-links">
+        <a href="../">home</a>
+        <a href="../blog/">blog</a>
+        <a href="../projects/" class="active">projects</a>
+        <a href="../now/">now</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="page-head">
+      <h1 class="page-title">Projects</h1>
+      <p class="page-sub">stuff i've built (or am building).</p>
+    </div>
+    <div id="content" class="proj-grid"><p class="loading">loading</p></div>
+  </main>
+
+  <footer class="foot">by Shreejal Shah, 2026 A.D. · <a href="../admin/">admin</a></footer>
+
+  <script src="../assets/app.js"></script>
+  <script>renderProjects(document.getElementById("content"));</script>
+</body>
+</html>

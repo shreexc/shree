@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  <title>Admin ― Shreejal Shah</title>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="../">Shreejal Shah</a>
+      <div class="nav-links">
+        <a href="../">home</a>
+        <a href="../blog/">blog</a>
+        <a href="../projects/">projects</a>
+        <a href="../now/">now</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page admin-wrap">
+    <div class="page-head">
+      <h1 class="page-title">Admin</h1>
+      <p class="page-sub">write a post, hit publish, it goes live. no code edits.</p>
+    </div>
+
+    <div id="notice" class="notice hidden"></div>
+
+    <div class="tabs">
+      <button class="tab active" data-panel="blog">blog</button>
+      <button class="tab" data-panel="project">project</button>
+      <button class="tab" data-panel="now">now</button>
+      <button class="tab" data-panel="manage">manage</button>
+      <button class="tab" data-panel="settings">settings</button>
+    </div>
+
+    <!-- BLOG -->
+    <section id="panel-blog" class="panel">
+      <form id="blog-form">
+        <div class="field">
+          <label>Title</label>
+          <input id="blog-title" type="text" placeholder="my first post" />
+        </div>
+        <div class="field">
+          <label>Date</label>
+          <input id="blog-date" type="date" />
+        </div>
+        <div class="field">
+          <label>Tags <span class="hint">(comma separated)</span></label>
+          <input id="blog-tags" type="text" placeholder="life, code, notes" />
+        </div>
+        <div class="field">
+          <label>Excerpt <span class="hint">(short teaser shown in the list — optional)</span></label>
+          <input id="blog-excerpt" type="text" placeholder="a one-liner about the post" />
+        </div>
+        <div class="field">
+          <label>Body <span class="hint">(Markdown supported)</span></label>
+          <textarea id="blog-body" placeholder="# Hello&#10;&#10;Write your post in **markdown**..."></textarea>
+        </div>
+        <div class="btn-row"><button class="btn" type="submit">publish post</button></div>
+      </form>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="panel-project" class="panel hidden">
+      <form id="proj-form">
+        <div class="field">
+          <label>Title</label>
+          <input id="proj-title" type="text" placeholder="cool project" />
+        </div>
+        <div class="field">
+          <label>Date</label>
+          <input id="proj-date" type="date" />
+        </div>
+        <div class="field">
+          <label>Description</label>
+          <textarea id="proj-desc" style="min-height:110px" placeholder="what it is, what it does..."></textarea>
+        </div>
+        <div class="field">
+          <label>Tech <span class="hint">(comma separated)</span></label>
+          <input id="proj-tech" type="text" placeholder="python, react, sqlite" />
+        </div>
+        <div class="field">
+          <label>Status <span class="hint">(optional)</span></label>
+          <input id="proj-status" type="text" placeholder="live / wip / archived" />
+        </div>
+        <div class="field">
+          <label>Live link <span class="hint">(optional)</span></label>
+          <input id="proj-link" type="url" placeholder="https://..." />
+        </div>
+        <div class="field">
+          <label>Repo link <span class="hint">(optional)</span></label>
+          <input id="proj-repo" type="url" placeholder="https://github.com/..." />
+        </div>
+        <div class="field">
+          <label>Image URL <span class="hint">(optional)</span></label>
+          <input id="proj-image" type="url" placeholder="https://..." />
+        </div>
+        <div class="btn-row"><button class="btn" type="submit">publish project</button></div>
+      </form>
+    </section>
+
+    <!-- NOW -->
+    <section id="panel-now" class="panel hidden">
+      <form id="now-form">
+        <div class="field">
+          <label>Date</label>
+          <input id="now-date" type="date" />
+        </div>
+        <div class="field">
+          <label>Update <span class="hint">(Markdown supported)</span></label>
+          <textarea id="now-body" placeholder="what are you up to right now?"></textarea>
+        </div>
+        <div class="btn-row"><button class="btn" type="submit">post update</button></div>
+      </form>
+    </section>
+
+    <!-- MANAGE -->
+    <section id="panel-manage" class="panel hidden">
+      <p class="page-sub" style="margin-bottom:16px">delete anything you've published.</p>
+      <div id="manage-list"><p class="loading">loading…</p></div>
+    </section>
+
+    <!-- SETTINGS -->
+    <section id="panel-settings" class="panel hidden">
+      <div class="notice info">
+        Your token is stored <b>only in this browser</b> (localStorage) and is sent
+        <b>only to GitHub's API</b>. Use a fine-grained token limited to this repo with
+        <b>Contents: Read &amp; write</b>. See the README for step-by-step setup.
+      </div>
+      <div class="field">
+        <label>GitHub owner / username</label>
+        <input id="cfg-owner" type="text" placeholder="shreexc" />
+      </div>
+      <div class="field">
+        <label>Repository name</label>
+        <input id="cfg-repo" type="text" placeholder="shreexc.github.io" />
+      </div>
+      <div class="field">
+        <label>Branch</label>
+        <input id="cfg-branch" type="text" placeholder="main" />
+      </div>
+      <div class="field">
+        <label>Repo subfolder <span class="hint">(leave blank if your site files sit at the repo root)</span></label>
+        <input id="cfg-prefix" type="text" placeholder="" />
+      </div>
+      <div class="field">
+        <label>Personal Access Token</label>
+        <input id="cfg-token" type="password" placeholder="github_pat_..." autocomplete="off" />
+      </div>
+      <div class="btn-row">
+        <button id="cfg-save" class="btn" type="button">save settings</button>
+        <button id="cfg-test" class="btn secondary" type="button">test connection</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">admin · changes commit to your GitHub repo</footer>
+
+  <script src="../assets/admin.js"></script>
+</body>
+</html>
