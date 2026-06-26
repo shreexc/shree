@@ -13,7 +13,6 @@
 const LS_KEY = "shree_admin_cfg";
 
 const FILES = {
-  blog: "data/blog.json",
   projects: "data/projects.json",
   now: "data/now.json",
 };
@@ -157,7 +156,6 @@ document.addEventListener("DOMContentLoaded", () => {
   $("#cfg-token").value = cfg.token;
 
   // default dates
-  $("#blog-date").value = todayISO();
   $("#proj-date").value = todayISO();
   $("#now-date").value = todayISO();
 
@@ -208,25 +206,6 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (e) {
       notify("Connection failed: " + e.message, "err");
     }
-  });
-
-  // ---- publish: blog ----
-  $("#blog-form").addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const title = $("#blog-title").value.trim();
-    if (!title) return notify("Title required.", "err");
-    const entry = {
-      title,
-      slug: slugify(title),
-      date: $("#blog-date").value || todayISO(),
-      tags: splitList($("#blog-tags").value),
-      excerpt: $("#blog-excerpt").value.trim(),
-      body: $("#blog-body").value,
-    };
-    await runPublish("blog", entry, `Add blog post: ${title}`, e.submitter, () => {
-      e.target.reset();
-      $("#blog-date").value = todayISO();
-    });
   });
 
   // ---- publish: project ----
@@ -292,7 +271,7 @@ async function loadManage() {
   }
   try {
     const sections = [];
-    for (const type of ["blog", "projects", "now"]) {
+    for (const type of ["projects", "now"]) {
       const { items } = await ghGetFile(cfg, type);
       const rows = items
         .map(

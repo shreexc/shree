@@ -78,7 +78,6 @@ Tip: if styling ever looks missing, open DevTools → Network and check that
 
 ```
 /index.html          home
-/blog/index.html     blog (list + single post)
 /projects/index.html projects
 /now/index.html      now
 /admin/index.html    admin panel

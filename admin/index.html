@@ -14,7 +14,6 @@
       <a class="brand" href="../">Shreejal Shah</a>
       <div class="nav-links">
         <a href="../">home</a>
-        <a href="../blog/">blog</a>
         <a href="../projects/">projects</a>
         <a href="../now/">now</a>
       </div>
@@ -30,39 +29,11 @@
     <div id="notice" class="notice hidden"></div>
 
     <div class="tabs">
-      <button class="tab active" data-panel="blog">blog</button>
       <button class="tab" data-panel="project">project</button>
       <button class="tab" data-panel="now">now</button>
       <button class="tab" data-panel="manage">manage</button>
       <button class="tab" data-panel="settings">settings</button>
     </div>
-
-    <!-- BLOG -->
-    <section id="panel-blog" class="panel">
-      <form id="blog-form">
-        <div class="field">
-          <label>Title</label>
-          <input id="blog-title" type="text" placeholder="my first post" />
-        </div>
-        <div class="field">
-          <label>Date</label>
-          <input id="blog-date" type="date" />
-        </div>
-        <div class="field">
-          <label>Tags <span class="hint">(comma separated)</span></label>
-          <input id="blog-tags" type="text" placeholder="life, code, notes" />
-        </div>
-        <div class="field">
-          <label>Excerpt <span class="hint">(short teaser shown in the list — optional)</span></label>
-          <input id="blog-excerpt" type="text" placeholder="a one-liner about the post" />
-        </div>
-        <div class="field">
-          <label>Body <span class="hint">(Markdown supported)</span></label>
-          <textarea id="blog-body" placeholder="# Hello&#10;&#10;Write your post in **markdown**..."></textarea>
-        </div>
-        <div class="btn-row"><button class="btn" type="submit">publish post</button></div>
-      </form>
-    </section>
 
     <!-- PROJECT -->
     <section id="panel-project" class="panel hidden">
