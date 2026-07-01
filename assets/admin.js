@@ -249,7 +249,7 @@ async function runPublish(type, entry, message, btn, onDone) {
   try {
     await publish(type, entry, message);
     notify(
-      "Published! 🎉 GitHub Pages is rebuilding — your post will be live in ~30–60s.",
+      "Post Published!",
       "ok"
     );
     onDone && onDone();
