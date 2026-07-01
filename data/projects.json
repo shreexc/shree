@@ -1,13 +1,1 @@
-[
-  {
-    "id": 1,
-    "title": "This website",
-    "date": "2026-06-18",
-    "description": "making a KU based LLM",
-    "tech": ["python", "machine learning", "colab", "unsloth"],
-    "status": "live",
-    "link": "https://shreejalshah.com.np",
-    "repo": "https://github.com/shreexc",
-    "image": ""
-  }
-]
+[]
